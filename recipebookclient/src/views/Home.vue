@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import RecipeCard from '../components/RecipeCard.vue'
 
 export default {
@@ -20,23 +21,18 @@ export default {
   },
   data () {
     return {
-      recipes: [
-        {
-          id: 1,
-          title: 'Pancakes',
-          subtitle: 'Prep: 5m, Cook: 10m',
-          description: 'A shortstack',
-          src: 'pancakes.jpg'
-        },
-        {
-          id: 2,
-          title: 'Avocado Toast',
-          subtitle: 'Prep: 10m, Cook: 5m',
-          description: 'For the rich folk.',
-          src: 'avocado-toast.jpg'
-        }
-      ]
+      recipes: []
     }
+  },
+  created () {
+    axios
+      .get('sample-recipes.json')
+      .then(response => {
+        this.recipes = response.data
+      })
+      .catch(e => {
+        console.error(e)
+      })
   }
 }
 </script>
