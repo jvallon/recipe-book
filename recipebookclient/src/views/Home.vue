@@ -1,0 +1,46 @@
+<template>
+  <div id="home-container">
+    <recipe-card
+      v-for="recipe in recipes"
+      :key="recipe.id"
+      :title="recipe.title"
+      :subtitle="recipe.subtitle"
+      :description="recipe.description"
+      :src="recipe.src"></recipe-card>
+  </div>
+</template>
+
+<script>
+import RecipeCard from '../components/RecipeCard.vue'
+
+export default {
+  name: 'Home',
+  components: {
+    RecipeCard
+  },
+  data () {
+    return {
+      recipes: [
+        {
+          id: 1,
+          title: 'Pancakes',
+          subtitle: 'Prep: 5m, Cook: 10m',
+          description: 'A shortstack',
+          src: 'pancakes.jpg'
+        },
+        {
+          id: 2,
+          title: 'Avocado Toast',
+          subtitle: 'Prep: 10m, Cook: 5m',
+          description: 'For the rich folk.',
+          src: 'avocado-toast.jpg'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>
