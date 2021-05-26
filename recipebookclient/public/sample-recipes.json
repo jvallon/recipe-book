@@ -11,5 +11,12 @@
         "subtitle": "Prep: 10m, Cook: 5m",
         "description": "For the rich folk.",
         "src": "avocado-toast.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Some third thing",
+        "subtitle": "Prep: 10m, Cook: 5m",
+        "description": "For the rich folk.",
+        "src": "avocado-toast.jpg"
     }
 ]
