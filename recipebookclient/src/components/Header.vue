@@ -1,6 +1,9 @@
 <template>
   <div class="header-container">
-    <v-app-bar>
+    <v-app-bar
+      fixed
+      elevate-on-scroll
+      color="#eee">
       <span v-if="isHome">Recipe Book</span>
       <span v-else><v-icon large @click="goBack">mdi-chevron-left</v-icon></span>
       <v-spacer></v-spacer>
