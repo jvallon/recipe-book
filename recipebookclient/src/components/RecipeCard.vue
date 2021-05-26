@@ -13,6 +13,10 @@
     <v-card-text>{{ description }}</v-card-text>
     <v-card-actions>
       <v-btn>Try it!</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn icon @click="favorite = !favorite">
+        <v-icon :style="favorite ? 'color: red' : 'color: inherit'">{{ favorite ? 'mdi-heart' : 'mdi-heart-outline' }}</v-icon>
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -25,6 +29,11 @@ export default {
     subtitle: { type: String, default: 'Subtitle' },
     description: { type: String, default: 'Description' },
     src: { type: String }
+  },
+  data () {
+    return {
+      favorite: false
+    }
   }
 }
 </script>
