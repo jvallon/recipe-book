@@ -1,7 +1,8 @@
 <template>
   <div class="header-container">
     <v-app-bar>
-      <span>Recipe Book</span>
+      <span v-if="isHome">Recipe Book</span>
+      <span v-else><v-icon large @click="goBack">mdi-chevron-left</v-icon></span>
       <v-spacer></v-spacer>
       <v-btn
         class="mx-2"
@@ -33,7 +34,17 @@
 
 <script>
 export default {
-
+  name: 'Header',
+  methods: {
+    goBack () {
+      this.$router.go(-1)
+    }
+  },
+  computed: {
+    isHome () {
+      return this.$route.name === 'Home'
+    }
+  }
 }
 </script>
 
