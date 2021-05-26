@@ -1,12 +1,20 @@
 <template>
   <div id="home-container">
-    <recipe-card
-      v-for="recipe in recipes"
-      :key="recipe.id"
-      :title="recipe.title"
-      :subtitle="recipe.subtitle"
-      :description="recipe.description"
-      :src="recipe.src"></recipe-card>
+    <v-container fluid>
+      <v-row>
+        <v-col
+          v-for="recipe in recipes"
+          :key="recipe.id"
+          >
+            <recipe-card
+              :title="recipe.title"
+              :subtitle="recipe.subtitle"
+              :description="recipe.description"
+              :src="recipe.src">
+            </recipe-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
