@@ -1,7 +1,7 @@
 <template>
   <div id="home-container">
     <v-container fluid>
-      <v-row>
+      <v-row dense>
         <v-col
           v-for="recipe in recipes"
           :key="recipe.id"
