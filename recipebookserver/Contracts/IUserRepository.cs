@@ -7,5 +7,8 @@ namespace Contracts
 {
     public interface IUserRepository : IRepositoryBase<User>
     {
+        IEnumerable<User> GetUsers();
+        User GetUserById(int userId);
+        User GetUserByIdWithDetails(int userId);
     }
 }

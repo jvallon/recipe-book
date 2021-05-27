@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 using System.Text;
 
 namespace Entities.Models
@@ -18,9 +19,9 @@ namespace Entities.Models
         [StringLength(200, ErrorMessage = "Description can't be more than 200 characters")]
         public string Description { get; set; }
 
-        public DateTime? PrepTime { get; set; }
+        public TimeSpan? PrepTime { get; set; }
 
-        public DateTime? CookTime { get; set; }
+        public TimeSpan? CookTime { get; set; }
 
         [ForeignKey(nameof(User))]
         public int UserId { get; set; }

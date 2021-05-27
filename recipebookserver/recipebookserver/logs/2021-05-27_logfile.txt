@@ -29,3 +29,36 @@
 2021-05-27 13:19:29.1930 INFO Here is an info message
 2021-05-27 13:25:59.7147 INFO Here is an info message
 2021-05-27 13:30:02.8847 INFO Here is an info message
+2021-05-27 14:36:27.8343 ERROR Something went wrong inside GetUsers
+2021-05-27 14:37:42.9398 ERROR Something went wrong inside GetUsers
+2021-05-27 14:38:25.4749 ERROR Something went wrong inside GetUsers action: The LINQ expression 'DbSet<User>()
+    .OrderBy(u => string.Format(
+        format: string.Format(
+            format: "{0} {1}", 
+            arg0: u.FirstName, 
+            arg1: u.LastName), 
+        args: object[] { }))' could not be translated. Additional information: Translation of method 'string.Format' failed. If this method can be mapped to your custom function, see https://go.microsoft.com/fwlink/?linkid=2132413 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2021-05-27 14:39:23.5375 ERROR Something went wrong inside GetUsers action: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+2021-05-27 14:40:22.2857 ERROR Something went wrong inside GetUsers action: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+2021-05-27 14:41:01.3969 INFO Returned all users from database
+2021-05-27 14:53:10.4902 INFO Returned all users from DB
+2021-05-27 14:53:11.7252 INFO Returned user with id: 1 from DB
+2021-05-27 14:53:15.5931 INFO Returned all users from DB
+2021-05-27 15:03:50.3511 INFO Returned all users from DB
+2021-05-27 15:03:52.2303 INFO Returned user with id: 1 from DB
+2021-05-27 15:03:56.1061 INFO Returned all users from DB
+2021-05-27 15:16:27.6159 INFO Returned all users from DB
+2021-05-27 15:16:30.1276 INFO Returned user with id: 1 from DB
+2021-05-27 15:16:35.6070 ERROR Something went wrong inside GetUserByIdWithDetails for id: 1
+2021-05-27 15:29:03.1633 INFO Returned all users from DB
+2021-05-27 15:29:07.8969 INFO Returned user with id: 1 from DB
+2021-05-27 15:29:12.4594 ERROR Something went wrong inside GetUserByIdWithDetails for id: 1, Unable to cast object of type 'System.TimeSpan' to type 'System.DateTime'.
+2021-05-27 15:30:33.7568 INFO Returned user with details for id: 1
+2021-05-27 15:31:59.1137 INFO Returned user with details for id: 1
+2021-05-27 16:06:00.2135 INFO Returned all users from DB
+2021-05-27 16:06:04.1054 INFO Returned user with id: 1 from DB
+2021-05-27 16:06:05.6334 INFO Returned user with id: 2 from DB
+2021-05-27 16:06:09.0001 INFO Returned user with details for id: 1
+2021-05-27 16:06:15.8374 INFO Returned user with details for id: 2
+2021-05-27 16:06:16.9877 INFO Returned user with details for id: 3
+2021-05-27 16:06:18.0594 INFO Returned user with details for id: 4
