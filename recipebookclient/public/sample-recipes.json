@@ -3,20 +3,20 @@
         "title": "Pancakes",
         "subtitle": "Prep: 5m, Cook: 10m",
         "description": "A shortstack",
-        "src": "pancakes.jpg"
+        "imageUrl": "pancakes.jpg"
     },
     {
         "id": 2,
         "title": "Avocado Toast",
         "subtitle": "Prep: 10m, Cook: 5m",
         "description": "For the rich folk.",
-        "src": "avocado-toast.jpg"
+        "imageUrl": "avocado-toast.jpg"
     },
     {
         "id": 3,
         "title": "Some third thing",
         "subtitle": "Prep: 10m, Cook: 5m",
         "description": "For the rich folk.",
-        "src": "avocado-toast.jpg"
+        "imageUrl": "avocado-toast.jpg"
     }
 ]
