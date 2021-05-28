@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <Header></Header>
+    <Header class="header"></Header>
 
-      <v-main class="main">
-        <router-view/>
-      </v-main>
+    <v-main class="main">
+      <router-view/>
+    </v-main>
   </v-app>
 </template>
 
@@ -23,7 +23,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.main {
-  margin-top: 5%;
+.header {
+  height: 56px;
 }
 </style>

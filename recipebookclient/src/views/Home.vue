@@ -4,13 +4,12 @@
       <v-row dense>
         <v-col
           v-for="recipe in recipes"
-          :key="recipe.id"
+          :key="recipe.recipeId"
           >
             <recipe-card
               :title="recipe.title"
-              :subtitle="recipe.subtitle"
               :description="recipe.description"
-              :src="recipe.src">
+              :src="recipe.imageUrl">
             </recipe-card>
         </v-col>
       </v-row>
@@ -32,11 +31,15 @@ export default {
       recipes: []
     }
   },
+  computed: {
+  },
   created () {
     axios
-      .get('sample-recipes.json')
+      .get('http://localhost:5000/api/recipe')
+      // .get('sample-recipes.json')
       .then(response => {
         this.recipes = response.data
+        console.log(response.data)
       })
       .catch(e => {
         console.error(e)
