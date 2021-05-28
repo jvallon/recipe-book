@@ -12,7 +12,7 @@
     <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
     <v-card-text>{{ description }}</v-card-text>
     <v-card-actions>
-      <v-btn>Try it!</v-btn>
+      <v-btn @click="onRecipeClick">Try it!</v-btn>
       <v-spacer></v-spacer>
       <v-btn icon @click="favorite = !favorite">
         <v-icon :style="favorite ? 'color: red' : 'color: inherit'">{{ favorite ? 'mdi-heart' : 'mdi-heart-outline' }}</v-icon>
@@ -25,6 +25,7 @@
 export default {
   name: 'RecipeCard',
   props: {
+    id: { type: Number, required: true },
     title: { type: String, default: 'Title' },
     subtitle: { type: String, default: 'Subtitle' },
     description: { type: String, default: 'Description' },
@@ -34,10 +35,24 @@ export default {
     return {
       favorite: false
     }
+  },
+  methods: {
+    onRecipeClick () {
+      this.$router.push({ name: 'recipe', params: { id: this.id } })
+    }
+  },
+  watch: {
+    src () {
+    }
+  },
+  mounted () {
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.v-card__title {
+  word-break: normal;
+}
 
 </style>

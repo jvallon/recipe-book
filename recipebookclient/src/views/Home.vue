@@ -7,6 +7,7 @@
           :key="recipe.recipeId"
           >
             <recipe-card
+              :id="recipe.recipeId"
               :title="recipe.title"
               :description="recipe.description"
               :src="recipe.imageUrl">
