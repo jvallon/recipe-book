@@ -13,6 +13,7 @@
                   {{ cookTime }}
                 </v-card-subtitle>
                 <v-card-text>{{ recipe.description }}</v-card-text>
+                <v-card-text>Written by: {{ author }}</v-card-text>
               </v-col>
               <v-col cols="4">
                 <v-img :src="imageUrl" size="250px"></v-img>
@@ -40,7 +41,8 @@ export default {
       recipe: {},
       prepTime: 0,
       cookTime: 0,
-      imageUrl: ''
+      imageUrl: '',
+      author: ''
     }
   },
   computed: {
@@ -50,6 +52,7 @@ export default {
       this.prepTime = this.recipe.prepTime.value.totalMinutes
       this.cookTime = this.recipe.cookTime.value.totalMinutes
       this.imageUrl = `/${this.recipe.imageUrl}`
+      this.author = this.recipe.user.username
       console.log(this.recipe.imageUrl)
     }
   },
