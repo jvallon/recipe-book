@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import RecipeService from '@/api-services/recipe.service'
 import RecipeCard from '../components/RecipeCard.vue'
 
 export default {
@@ -35,12 +35,9 @@ export default {
   computed: {
   },
   created () {
-    axios
-      .get('http://localhost:5000/api/recipe')
-      // .get('sample-recipes.json')
+    RecipeService.getAll()
       .then(response => {
         this.recipes = response.data
-        console.log(response.data)
       })
       .catch(e => {
         console.error(e)
