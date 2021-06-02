@@ -62,11 +62,11 @@ namespace recipebookserver.Controllers
         }
 
         [HttpGet("{id}/recipes")]
-        public IActionResult GetUserByIdWithDetails(int id)
+        public IActionResult GetUserByIdWithRecipes(int id)
         {
             try
             {
-                var user = repository.User.GetUserByIdWithDetails(id);
+                var user = repository.User.GetUserByIdWithRecipes(id);
 
                 if(user == null)
                 {
@@ -83,6 +83,32 @@ namespace recipebookserver.Controllers
             catch(Exception ex)
             {
                 logger.LogError($"Something went wrong inside GetUserByIdWithDetails for id: {id}, {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpGet("{id}/favorites")]
+        public IActionResult GetUserByIdWithFavorites(int id)
+        {
+            try
+            {
+                var user = repository.User.GetUserByIdWithFavorites(id);
+
+                if(user == null)
+                {
+                    logger.LogError($"User with id: {id} hasn't been found in the database");
+                    return NotFound();
+                }
+                else
+                {
+                    logger.LogInfo($"Returned user with favorites for id: {id}");
+                    var userResult = mapper.Map<UserDetailsDto>(user);
+                    return Ok(userResult);
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Something went wrong inside GetUserByIdWithFavorites for id: {id}, {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }

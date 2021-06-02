@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities.DataTransferObjects
 {
-    public class RecipeDto
+    public class RecipeWithDetailsDto
     {
         public int RecipeId { get; set; }
         public string Title { get; set; }
@@ -12,5 +12,7 @@ namespace Entities.DataTransferObjects
         public TimeSpan? PrepTime { get; set; }
         public TimeSpan? CookTime { get; set; }
         public string? ImageUrl { get; set; }
+
+        public UserDto User { get; set; }
     }
 }

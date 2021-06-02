@@ -14,7 +14,10 @@ namespace recipebookserver
         {
             CreateMap<User, UserDto>();
             CreateMap<User, UserWithRecipesDto>();
+            CreateMap<User, UserDetailsDto>();
             CreateMap<Recipe, RecipeDto>();
+            CreateMap<Recipe, RecipeWithDetailsDto>();
+            CreateMap<Favorite, FavoriteDto>();
         }
     }
 }

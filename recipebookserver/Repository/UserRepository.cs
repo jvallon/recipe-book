@@ -30,10 +30,17 @@ namespace Repository
             return FindByCondition(user => user.UserId == id).FirstOrDefault();
         }
 
-        public User GetUserByIdWithDetails(int userId)
+        public User GetUserByIdWithRecipes(int userId)
         {
             return FindByCondition(user => user.UserId.Equals(userId))
                 .Include(re => re.Recipes)
+                .FirstOrDefault();
+        }
+
+        public User GetUserByIdWithFavorites(int userId)
+        {
+            return FindByCondition(user => user.UserId.Equals(userId))
+                .Include(f => f.Favorites)
                 .FirstOrDefault();
         }
     }

@@ -28,5 +28,7 @@ namespace Entities.Models
         public string? EmailAddress { get; set; }
 
         public ICollection<Recipe> Recipes { get; set; }
+        
+        public virtual ICollection<Favorite> Favorites { get; set; }
     }
 }

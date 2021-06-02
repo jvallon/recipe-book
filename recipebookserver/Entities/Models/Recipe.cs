@@ -23,6 +23,8 @@ namespace Entities.Models
 
         public TimeSpan? CookTime { get; set; }
 
+        public string? ImageUrl { get; set; }
+
         [ForeignKey(nameof(User))]
         public int UserId { get; set; }
         public User User { get; set; }

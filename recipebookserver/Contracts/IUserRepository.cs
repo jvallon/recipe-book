@@ -9,6 +9,7 @@ namespace Contracts
     {
         IEnumerable<User> GetUsers();
         User GetUserById(int userId);
-        User GetUserByIdWithDetails(int userId);
+        User GetUserByIdWithRecipes(int userId);
+        User GetUserByIdWithFavorites(int userId);
     }
 }
