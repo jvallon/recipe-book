@@ -14,9 +14,16 @@
     <v-card-actions>
       <v-btn @click="onRecipeClick">Try it!</v-btn>
       <v-spacer></v-spacer>
-      <v-btn icon @click="favorite = !favorite">
-        <v-icon :style="favorite ? 'color: red' : 'color: inherit'">{{ favorite ? 'mdi-heart' : 'mdi-heart-outline' }}</v-icon>
-      </v-btn>
+      <!-- <v-btn icon @click="favorite = !favorite"> -->
+      <!-- <v-btn icon @click="$emit('favorite', $event.target.value)"> -->
+      <v-checkbox
+        color="red"
+        off-icon="mdi-heart-outline"
+        on-icon="mdi-heart"
+        v-model="isFavorite"
+        @change="$emit('update-favorite', $event)"></v-checkbox>
+        <!-- <v-icon :style="favorite ? 'color: red' : 'color: inherit'">{{ favorite ? 'mdi-heart' : 'mdi-heart-outline' }}</v-icon> -->
+      <!-- </v-btn> -->
     </v-card-actions>
   </v-card>
 </template>
@@ -34,8 +41,11 @@ export default {
   },
   data () {
     return {
-      // favorite: false
+      isFavorite: this.favorite
     }
+  },
+  computed: {
+
   },
   methods: {
     onRecipeClick () {
@@ -43,7 +53,8 @@ export default {
     }
   },
   watch: {
-    src () {
+    favorite () {
+      this.isFavorite = this.favorite
     }
   },
   mounted () {

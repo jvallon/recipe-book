@@ -79,5 +79,30 @@ namespace recipebookserver.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteFavorite(int id)
+        {
+            try
+            {
+                var favorite = repository.Favorite.FindByCondition(f => f.Id == id).FirstOrDefault();
+                if(favorite == null)
+                {
+                    logger.LogError($"Favorite with id: {id} not found in db");
+                    return NotFound();
+                }
+
+                repository.Favorite.Delete(favorite);
+                repository.Save();
+                logger.LogInfo($"Deleted favorite with id: {id}");
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Something went wrong inside DeleteFavorite action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }

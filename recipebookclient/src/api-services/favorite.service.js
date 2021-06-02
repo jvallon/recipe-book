@@ -8,5 +8,8 @@ export default {
   },
   create (payload) {
     return Axios.post(`${RESOURCE_NAME}`, payload)
+  },
+  delete (id) {
+    return Axios.delete(`${RESOURCE_NAME}/${id}`)
   }
 }

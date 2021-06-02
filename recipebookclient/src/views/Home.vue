@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 <template>
   <div id="home-container">
     <v-container fluid>
@@ -11,7 +12,8 @@
               :title="recipe.title"
               :description="recipe.description"
               :src="recipe.imageUrl"
-              :favorite="isUserFavorite(recipe)">
+              :favorite="isUserFavorite(recipe)"
+              @update-favorite="updateFavorite($event, recipe.recipeId)">
             </recipe-card>
         </v-col>
       </v-row>
@@ -22,6 +24,8 @@
 <script>
 import RecipeService from '@/api-services/recipe.service'
 import UserService from '@/api-services/user.service'
+// eslint-disable-next-line no-unused-vars
+import FavoriteService from '@/api-services/favorite.service'
 import RecipeCard from '../components/RecipeCard.vue'
 
 export default {
@@ -29,11 +33,11 @@ export default {
   components: {
     RecipeCard
   },
+  props: ['user'],
   data () {
     return {
       recipes: [],
-      favorites: [],
-      userId: 1
+      favorites: []
     }
   },
   computed: {
@@ -45,6 +49,30 @@ export default {
       }
 
       return false
+    },
+    getFavoriteId (userId, recipeId) {
+      return this.favorites.filter(fav => fav.recipeId === recipeId && fav.userId === userId)[0]
+    },
+    updateFavorite (value, recipeId) {
+      console.log(value, recipeId, this.getFavoriteId(this.user.id, recipeId))
+      const fav = this.getFavoriteId(this.user.id, recipeId)
+
+      if (value === false) {
+        FavoriteService.delete(fav.id)
+      } else {
+        FavoriteService.create({ userId: this.user.id, recipeId: recipeId })
+      }
+
+      this.refreshFavorites()
+    },
+    retrieveFavorites () {
+      UserService.getWithFavorites(this.user.id)
+        .then(response => {
+          this.favorites = response.data.favorites
+        })
+        .catch(e => {
+          console.error(e)
+        })
     }
   },
   created () {
@@ -56,14 +84,7 @@ export default {
         console.error(e)
       })
 
-    UserService.getWithFavorites(this.userId)
-      .then(response => {
-        this.favorites = response.data.favorites
-        console.log(this.favorites)
-      })
-      .catch(e => {
-        console.error(e)
-      })
+    this.retrieveFavorites()
   }
 }
 </script>

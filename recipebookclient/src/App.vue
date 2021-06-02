@@ -3,7 +3,7 @@
     <Header class="header"></Header>
 
     <v-main class="main">
-      <router-view/>
+      <router-view :user="userInfo"/>
     </v-main>
   </v-app>
 </template>
@@ -18,7 +18,12 @@ export default {
   },
 
   data: () => ({
-    //
+    userInfo: {
+      id: 1,
+      firstName: 'Josh',
+      lastName: 'Vallon',
+      username: 'jvallon'
+    }
   })
 }
 </script>

@@ -11278,3 +11278,259 @@
 2021-06-02 14:47:41.7985 Debug Creating file appender: C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt
 2021-06-02 14:47:41.7985 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
 2021-06-02 14:47:58.3670 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:07:43.7311 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:07:43.9759 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:07:55.7885 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:07:59.6005 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:07:59.6180 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:08:24.0227 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:08:44.8229 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:08:44.8425 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:14:25.3314 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:14:25.3400 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:14:25.3663 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:14:25.3762 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:14:32.9329 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:14:34.6524 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:14:34.6524 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:15:12.9461 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:15:12.9557 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:15:53.3080 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:15:53.3345 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:16:11.4442 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:16:12.4702 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:16:12.4702 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:21:51.3353 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:21:51.3424 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:22:18.5332 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:22:18.5332 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:22:50.0565 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:22:50.0636 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:08.5796 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:08.5796 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:26.2346 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:26.2346 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:34.8951 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:34.8951 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:41.4244 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:23:41.4244 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:37:05.0886 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:37:05.1047 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:43:26.6247 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:43:26.6990 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:43:55.6805 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:43:55.6840 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:58:52.0398 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:58:52.0609 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:59:21.3915 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 15:59:21.4072 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:00:35.6804 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:00:35.6888 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:00:35.7069 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:00:35.7252 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:01:02.1636 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:01:02.1888 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:03:52.2787 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:03:52.2993 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:03:52.3208 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:03:52.3540 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:19:16.5482 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:19:16.5985 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:19:38.2801 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:19:38.3094 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:20:16.2132 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:20:16.2161 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:20:35.7827 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:20:35.7827 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:20:57.4933 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:20:57.5468 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:21:21.7082 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:21:21.7173 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:21:46.1551 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:21:46.1551 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:22:13.0637 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:22:13.0827 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:22:38.4604 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:22:38.4844 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:23:18.5969 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:23:18.5969 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:24:51.8463 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:24:51.8463 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:24:52.1200 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:24:52.1200 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:24:52.1505 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:24:52.1599 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:25:58.7437 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:25:58.7603 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:10.1454 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:10.1454 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:25.1364 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:25.1364 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:37.0997 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:37.0997 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:55.8013 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:26:55.8275 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:31:03.3732 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-06-02 16:31:03.5243 Debug Found assembly location directory: 'C:\code\recipe-book\recipebookserver\recipebookserver\bin\Debug\netcoreapp3.1' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-06-02 16:31:03.5243 Debug Auto loading based on NLog-Assembly found location: C:\code\recipe-book\recipebookserver\recipebookserver\bin\Debug\netcoreapp3.1
+2021-06-02 16:31:03.5265 Debug Search for auto loading files in location: C:\code\recipe-book\recipebookserver\recipebookserver\bin\Debug\netcoreapp3.1
+2021-06-02 16:31:03.5265 Debug Start auto loading, location: C:\code\recipe-book\recipebookserver\recipebookserver\bin\Debug\netcoreapp3.1
+2021-06-02 16:31:03.5265 Info Auto loading assembly file: C:\code\recipe-book\recipebookserver\recipebookserver\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2021-06-02 16:31:03.5265 Info Loading assembly file: C:\code\recipe-book\recipebookserver\recipebookserver\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2021-06-02 16:31:03.5603 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.2.1548. Product version: 1.7.2+4bd1909dde91279dbdea4d1c38ff6a09de78f531. GlobalAssemblyCache: False
+2021-06-02 16:31:03.5603 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-06-02 16:31:03.5603 Info Auto loading assembly file: C:\code\recipe-book\recipebookserver\recipebookserver\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2021-06-02 16:31:03.5603 Trace Assembly 'Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2021-06-02 16:31:03.5603 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2021-06-02 16:31:03.5603 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2021-06-02 16:31:03.5603 Debug Auto loading done
+2021-06-02 16:31:03.5603 Info Message Template Auto Format enabled
+2021-06-02 16:31:03.5918 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.5918 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-06-02 16:31:03.6041 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-06-02 16:31:03.6041 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2021-06-02 16:31:03.6041 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6041 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-06-02 16:31:03.6041 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6041 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-06-02 16:31:03.6041 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-06-02 16:31:03.6041 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-06-02 16:31:03.6041 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.6041 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-06-02 16:31:03.6041 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6041 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-06-02 16:31:03.6041 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6041 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-06-02 16:31:03.6281 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2021-06-02 16:31:03.6281 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/code/recipe-book/recipebookserver/recipebookserver/logs/${shortdate}_logfile.txt'
+2021-06-02 16:31:03.6281 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6281 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2021-06-02 16:31:03.6281 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2021-06-02 16:31:03.6281 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6281 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-06-02 16:31:03.6281 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-06-02 16:31:03.6281 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2021-06-02 16:31:03.6281 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6355 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-06-02 16:31:03.6355 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6355 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-06-02 16:31:03.6355 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-06-02 16:31:03.6355 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-06-02 16:31:03.6355 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.6355 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-06-02 16:31:03.6355 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.6355 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-06-02 16:31:03.6355 Info Adding target FileTarget(Name=logfile)
+2021-06-02 16:31:03.6355 Debug Registered target logfile: NLog.Targets.FileTarget
+2021-06-02 16:31:03.6355 Trace ParseRulesElement
+2021-06-02 16:31:03.6656 Debug Watching path 'C:\code\recipe-book\recipebookserver\recipebookserver' filter 'nlog.config' for changes.
+2021-06-02 16:31:03.6674 Debug --- NLog configuration dump ---
+2021-06-02 16:31:03.6674 Debug Targets:
+2021-06-02 16:31:03.6674 Debug File Target[logfile]
+2021-06-02 16:31:03.6674 Debug Rules:
+2021-06-02 16:31:03.6674 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2021-06-02 16:31:03.6674 Debug --- End of NLog configuration dump ---
+2021-06-02 16:31:03.6674 Trace FindReachableObject<System.Object>:
+2021-06-02 16:31:03.6674 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2021-06-02 16:31:03.6674 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2021-06-02 16:31:03.6674 Trace  Scanning FileTarget 'File Target[logfile]'
+2021-06-02 16:31:03.6674 Trace   Scanning Property FileName ''C:/code/recipe-book/recipebookserver/recipebookserver/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2021-06-02 16:31:03.6674 Trace   Scanning SimpleLayout ''C:/code/recipe-book/recipebookserver/recipebookserver/logs/${shortdate}_logfile.txt''
+2021-06-02 16:31:03.6674 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.6674 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.6674 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2021-06-02 16:31:03.6674 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.6827 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2021-06-02 16:31:03.6827 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2021-06-02 16:31:03.6827 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.6827 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-06-02 16:31:03.6827 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.6827 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-06-02 16:31:03.6827 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-06-02 16:31:03.6827 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-06-02 16:31:03.6827 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.6827 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-06-02 16:31:03.6827 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.6827 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-06-02 16:31:03.6827 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2021-06-02 16:31:03.6827 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2021-06-02 16:31:03.6827 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2021-06-02 16:31:03.6827 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=C:\code\recipe-book\recipebookserver\recipebookserver/nlog.config
+2021-06-02 16:31:03.6827 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2021-06-02 16:31:03.7038 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2021-06-02 16:31:03.7038 Trace Initializing Layout Renderer: ${message}
+2021-06-02 16:31:03.7038 Trace Initializing Layout Renderer: ${literal}
+2021-06-02 16:31:03.7038 Trace Initializing Layout Renderer: ${level}
+2021-06-02 16:31:03.7038 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2021-06-02 16:31:03.7038 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.7038 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-06-02 16:31:03.7038 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.7133 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-06-02 16:31:03.7133 Trace Initializing Layout Renderer: ${uppercase}
+2021-06-02 16:31:03.7133 Trace Initializing Layout Renderer: ${literal}
+2021-06-02 16:31:03.7133 Trace Initializing Layout Renderer: ${longdate}
+2021-06-02 16:31:03.7133 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2021-06-02 16:31:03.7133 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.7133 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2021-06-02 16:31:03.7133 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.7133 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-06-02 16:31:03.7133 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.7133 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-06-02 16:31:03.7133 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-06-02 16:31:03.7133 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-06-02 16:31:03.7133 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.7133 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-06-02 16:31:03.7133 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.7133 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-06-02 16:31:03.7133 Trace Initializing Layout Renderer: ${literal}
+2021-06-02 16:31:03.7133 Trace Initializing Layout Renderer: ${shortdate}
+2021-06-02 16:31:03.7133 Trace Initializing Layout Renderer: ${literal}
+2021-06-02 16:31:03.7133 Trace Initializing 'C:/code/recipe-book/recipebookserver/recipebookserver/logs/${shortdate}_logfile.txt'
+2021-06-02 16:31:03.7133 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-06-02 16:31:03.7133 Trace Scanning SimpleLayout ''C:/code/recipe-book/recipebookserver/recipebookserver/logs/${shortdate}_logfile.txt''
+2021-06-02 16:31:03.7133 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-06-02 16:31:03.7290 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.7290 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2021-06-02 16:31:03.7290 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-06-02 16:31:03.7290 Trace Initializing File Target[logfile]
+2021-06-02 16:31:03.7290 Trace FindReachableObject<NLog.Layouts.Layout>:
+2021-06-02 16:31:03.7290 Trace Scanning FileTarget 'File Target[logfile]'
+2021-06-02 16:31:03.7290 Trace  Scanning Property FileName ''C:/code/recipe-book/recipebookserver/recipebookserver/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2021-06-02 16:31:03.7290 Trace  Scanning SimpleLayout ''C:/code/recipe-book/recipebookserver/recipebookserver/logs/${shortdate}_logfile.txt''
+2021-06-02 16:31:03.7290 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2021-06-02 16:31:03.7290 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2021-06-02 16:31:03.7290 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2021-06-02 16:31:03.7290 Trace File Target[logfile] has 2 layouts
+2021-06-02 16:31:03.7290 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2021-06-02 16:31:20.8543 Debug Targets for LoggerService.LoggerManager by level:
+2021-06-02 16:31:20.8543 Debug Trace =>
+2021-06-02 16:31:20.8543 Debug Debug => logfile
+2021-06-02 16:31:20.8543 Debug Info => logfile
+2021-06-02 16:31:20.8543 Debug Warn => logfile
+2021-06-02 16:31:20.8543 Debug Error => logfile
+2021-06-02 16:31:20.8543 Debug Fatal => logfile
+2021-06-02 16:31:20.8932 Debug FileTarget(Name=logfile): Preparing for new file 'C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt'
+2021-06-02 16:31:20.9058 Debug Creating file appender: C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt
+2021-06-02 16:31:20.9058 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:31:34.6194 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:31:40.7771 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:33:19.1517 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:33:19.2264 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:33:19.4034 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:33:19.4486 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:33:51.7376 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:33:51.7601 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:34:48.6127 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:34:48.6326 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:34:50.7664 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:34:58.0642 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:34:58.0642 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:34:59.9676 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:35:48.4944 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:36:46.6130 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:36:46.6249 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:37:00.9706 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:37:00.9706 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:37:03.7410 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:37:08.4951 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
+2021-06-02 16:37:15.3466 Trace Opening C:/code/recipe-book/recipebookserver/recipebookserver/logs/2021-06-02_logfile.txt with allowFileSharedWriting=False
