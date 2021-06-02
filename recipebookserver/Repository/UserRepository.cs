@@ -41,6 +41,8 @@ namespace Repository
         {
             return FindByCondition(user => user.UserId.Equals(userId))
                 .Include(f => f.Favorites)
+                    .ThenInclude(favorite => favorite.Recipe)
+                //.ThenInclude(recipe => recipe.Title)
                 .FirstOrDefault();
         }
     }

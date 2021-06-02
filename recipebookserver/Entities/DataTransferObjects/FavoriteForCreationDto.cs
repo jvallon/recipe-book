@@ -5,11 +5,9 @@ using Entities.Models;
 
 namespace Entities.DataTransferObjects
 {
-    public class FavoriteDto
+    public class FavoriteForCreationDto
     {
-        public int Id { get; set; }
         public int UserId { get; set; }
         public int RecipeId { get; set; }
-        public string RecipeTitle { get; set; }
     }
 }

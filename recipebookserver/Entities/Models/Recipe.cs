@@ -28,5 +28,7 @@ namespace Entities.Models
         [ForeignKey(nameof(User))]
         public int UserId { get; set; }
         public User User { get; set; }
+
+        public ICollection<Favorite> Favorites { get; set; }
     }
 }

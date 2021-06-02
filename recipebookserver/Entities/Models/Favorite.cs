@@ -12,12 +12,12 @@ namespace Entities.Models
     {
         public int Id { get; set; }
 
-        [ForeignKey(nameof(User))]
         public int UserId { get; set; }
-        public User User { get; set; }
+        [ForeignKey(nameof(UserId))]
+        public virtual User User { get; set; }
 
-        [ForeignKey(nameof(Recipe))]
         public int RecipeId { get; set; }
+        [ForeignKey(nameof(RecipeId))]
         public Recipe Recipe { get; set; }
     }
 }

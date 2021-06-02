@@ -8,6 +8,7 @@ namespace Contracts
     {
         IUserRepository User { get; }
         IRecipeRepository Recipe { get; }
+        IFavoriteRepository Favorite { get; }
         void Save();
     }
 }

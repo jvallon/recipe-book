@@ -93,7 +93,7 @@ namespace recipebookserver.Controllers
             try
             {
                 var user = repository.User.GetUserByIdWithFavorites(id);
-
+                
                 if(user == null)
                 {
                     logger.LogError($"User with id: {id} hasn't been found in the database");

@@ -11,6 +11,7 @@ namespace Repository
         private RepositoryContext repositoryContext;
         private IUserRepository userRepository;
         private IRecipeRepository recipeRepository;
+        private IFavoriteRepository favoriteRepository;
 
         public IUserRepository User
         {
@@ -35,6 +36,14 @@ namespace Repository
                 }
 
                 return recipeRepository;
+            }
+        }
+
+        public IFavoriteRepository Favorite
+        {
+            get
+            {
+                return favoriteRepository ??= new FavoriteRepository(repositoryContext);
             }
         }
 
