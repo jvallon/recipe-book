@@ -29,11 +29,12 @@ export default {
     title: { type: String, default: 'Title' },
     subtitle: { type: String, default: 'Subtitle' },
     description: { type: String, default: 'Description' },
-    src: { type: String }
+    src: { type: String },
+    favorite: { type: Boolean }
   },
   data () {
     return {
-      favorite: false
+      // favorite: false
     }
   },
   methods: {
