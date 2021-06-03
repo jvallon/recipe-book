@@ -35,5 +35,10 @@ namespace Repository
         {
             Create(favorite);
         }
+
+        public void DeleteFavorite(Favorite favorite)
+        {
+            Delete(favorite);
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace Contracts
         public IEnumerable<Favorite> GetFavoritesByUserId(int userId);
         public int GetFavoritesCountByRecipeId(int recipeId);
         void CreateFavorite(Favorite favorite);
+        void DeleteFavorite(Favorite favorite);
     }
 }

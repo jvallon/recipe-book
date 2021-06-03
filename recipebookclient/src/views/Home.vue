@@ -54,7 +54,7 @@ export default {
       return this.favorites.filter(fav => fav.recipeId === recipeId && fav.userId === userId)[0]
     },
     updateFavorite (value, recipeId) {
-      console.log(value, recipeId, this.getFavoriteId(this.user.id, recipeId))
+      // console.log(value, recipeId, this.getFavoriteId(this.user.id, recipeId))
       const fav = this.getFavoriteId(this.user.id, recipeId)
 
       if (value === false) {
@@ -63,7 +63,7 @@ export default {
         FavoriteService.create({ userId: this.user.id, recipeId: recipeId })
       }
 
-      this.refreshFavorites()
+      this.retrieveFavorites()
     },
     retrieveFavorites () {
       UserService.getWithFavorites(this.user.id)

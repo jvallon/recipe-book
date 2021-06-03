@@ -83,6 +83,7 @@ namespace recipebookserver.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteFavorite(int id)
         {
+            logger.LogInfo($"Attempting to delete favorite with id: {id}");
             try
             {
                 var favorite = repository.Favorite.FindByCondition(f => f.Id == id).FirstOrDefault();
@@ -92,7 +93,7 @@ namespace recipebookserver.Controllers
                     return NotFound();
                 }
 
-                repository.Favorite.Delete(favorite);
+                repository.Favorite.DeleteFavorite(favorite);
                 repository.Save();
                 logger.LogInfo($"Deleted favorite with id: {id}");
 
