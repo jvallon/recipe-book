@@ -35,7 +35,15 @@
         >
         <v-icon>mdi-plus</v-icon>
       </v-btn>
-      <v-menu offset-y>
+      <v-btn v-if="!$auth.isAuthenticated"
+        class="mx-2"
+        dark
+        rounded
+        color="darkgrey"
+        @click="login">
+        Login
+      </v-btn>
+      <v-menu offset-y v-if="$auth.isAuthenticated">
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             class="mx-2"
@@ -45,14 +53,22 @@
             color="darkgrey"
             v-bind="attrs"
             v-on="on">
-            <v-icon>mdi-account</v-icon>
+            <!-- <v-icon>mdi-account</v-icon> -->
+            <v-img
+              class="user-picture"
+              :src="$auth.user.picture"
+              contain
+              aspect-ratio="1"
+              max-width="45px"></v-img>
           </v-btn>
         </template>
         <v-list>
+          <v-list-item>{{ $auth.user.nickname }}</v-list-item>
+          <hr/>
           <v-list-item>My Recipes</v-list-item>
           <v-list-item>Favorites</v-list-item>
-          <v-list-item>Account</v-list-item>
-          <v-list-item>Logout</v-list-item>
+          <v-list-item :to="{ name: 'Profile' }">Profile</v-list-item>
+          <v-list-item @click="logout">Logout</v-list-item>
         </v-list>
       </v-menu>
     </v-app-bar>
@@ -68,6 +84,16 @@ export default {
     }
   },
   methods: {
+    // Log the user in
+    login () {
+      this.$auth.loginWithRedirect()
+    },
+    // Log the user out
+    logout () {
+      this.$auth.logout({
+        returnTo: window.location.origin
+      })
+    },
     onNewRecipeClick () {
       this.$router.push({ path: '/recipe/new' })
     },
@@ -86,5 +112,9 @@ export default {
 <style scoped>
 .search-box {
   max-width: 33%;
+}
+
+.user-picture {
+  border-radius: 45px;
 }
 </style>

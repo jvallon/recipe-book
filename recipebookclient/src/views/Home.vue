@@ -58,12 +58,10 @@ export default {
       const fav = this.getFavoriteId(this.user.id, recipeId)
 
       if (value === false) {
-        FavoriteService.delete(fav.id)
+        FavoriteService.delete(fav.id).then(response => this.retrieveFavorites())
       } else {
-        FavoriteService.create({ userId: this.user.id, recipeId: recipeId })
+        FavoriteService.create({ userId: this.user.id, recipeId: recipeId }).then(response => this.retrieveFavorites())
       }
-
-      this.retrieveFavorites()
     },
     retrieveFavorites () {
       UserService.getWithFavorites(this.user.id)
