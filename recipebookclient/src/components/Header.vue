@@ -65,7 +65,7 @@
         <v-list>
           <v-list-item>{{ $auth.user.nickname }}</v-list-item>
           <hr/>
-          <v-list-item>My Recipes</v-list-item>
+          <v-list-item :to="{ name: 'AuthTest' }">My Recipes</v-list-item>
           <v-list-item>Favorites</v-list-item>
           <v-list-item :to="{ name: 'Profile' }">Profile</v-list-item>
           <v-list-item @click="logout">Logout</v-list-item>
@@ -86,12 +86,14 @@ export default {
   methods: {
     // Log the user in
     login () {
-      this.$auth.loginWithRedirect()
+      this.$auth.loginWithRedirect({
+        redirect_uri: `${window.location.origin}/login`
+      })
     },
     // Log the user out
     logout () {
       this.$auth.logout({
-        returnTo: window.location.origin
+        returnTo: `${window.location.origin}/logout`
       })
     },
     onNewRecipeClick () {

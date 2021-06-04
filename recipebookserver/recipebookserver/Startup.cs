@@ -14,6 +14,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using recipebookserver.Extensions;
 using NLog;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 
 namespace recipebookserver
 {
@@ -37,6 +40,22 @@ namespace recipebookserver
             services.ConfigureRepositoryWrapper();
             services.AddAutoMapper(typeof(Startup));
 
+            // 1. Add Authentication Services
+            string domain = $"https://{Configuration["Auth0:Domain"]}/";
+            services
+                .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.Authority = domain;
+                    options.Audience = Configuration["Auth0:Audience"];
+                    // If the access token does not have a `sub` claim, `User.Identity.Name` will be `null`. Map it to a different claim by setting the NameClaimType below.
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        NameClaimType = ClaimTypes.NameIdentifier
+                    };
+                });
+
+            services.AddAuthorization();
             services.AddControllers();
         }
 
@@ -56,7 +75,7 @@ namespace recipebookserver
             });
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

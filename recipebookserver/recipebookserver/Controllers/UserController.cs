@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Contracts;
 using AutoMapper;
 using Entities.DataTransferObjects;
+using Microsoft.AspNetCore.Authorization;
 
 namespace recipebookserver.Controllers
 {
@@ -26,6 +27,7 @@ namespace recipebookserver.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult GetUsers()
         {
             try

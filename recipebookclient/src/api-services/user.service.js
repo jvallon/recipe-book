@@ -12,8 +12,19 @@ export default {
   getWithRecipes (id) {
     return Axios.get(`${RESOURCE_NAME}/${id}/recipes`)
   },
-  getWithFavorites (id) {
-    return Axios.get(`${RESOURCE_NAME}/${id}/favorites`)
+  async getWithFavorites (id) {
+    // Get the access token from the auth wrapper
+    const token = this.$token
+
+    // Use Axios to make a call to the API
+    const { data } = await Axios.get(`${RESOURCE_NAME}/${id}/favorites`, {
+      headers: {
+        Authorization: `Bearer ${token}` // send the access token through the 'Authorization' header
+      }
+    })
+    console.info(data)
+    return data
+    // return Axios.get(`${RESOURCE_NAME}/${id}/favorites`)
   },
   create (payload) {
     return Axios.post(`${RESOURCE_NAME}`, payload)

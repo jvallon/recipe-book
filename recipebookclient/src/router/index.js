@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home'
 import Profile from '@/views/Profile'
+import AuthTest from '@/views/AuthTest'
 import RecipeDetail from '@/components/RecipeDetail'
 import NotFound from '@/views/NotFound'
 import Forbidden from '@/views/Forbidden'
@@ -27,16 +28,22 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import('@/components/Auth/Login.vue')
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/logout',
+    name: 'Logout',
+    component: () => import('@/components/Auth/Logout.vue')
   },
   {
     path: '/profile',
     name: 'Profile',
     component: Profile,
     beforeEnter: authGuard
+  },
+  {
+    path: '/authtest',
+    name: 'AuthTest',
+    component: AuthTest
   },
   {
     path: '*',

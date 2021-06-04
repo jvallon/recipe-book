@@ -1,4 +1,6 @@
 {
   "domain": "dev-nb9gl4y1.us.auth0.com",
-  "clientId": "buM5pwRiXvgFkwaLP8P0OTBkGAFZ9Ydy"
+  "clientId": "buM5pwRiXvgFkwaLP8P0OTBkGAFZ9Ydy",
+  "audience": "https://recipebook/api",
+  "serverUrl": "http://localhost:5000"
 }

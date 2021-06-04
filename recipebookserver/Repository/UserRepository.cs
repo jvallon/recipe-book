@@ -30,6 +30,11 @@ namespace Repository
             return FindByCondition(user => user.UserId == id).FirstOrDefault();
         }
 
+        public User GetUserByAuthId(string authId)
+        {
+            return FindByCondition(user => user.Username == authId).FirstOrDefault();
+        }
+
         public User GetUserByIdWithRecipes(int userId)
         {
             return FindByCondition(user => user.UserId.Equals(userId))
