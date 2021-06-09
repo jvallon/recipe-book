@@ -23,7 +23,10 @@ namespace recipebookserver
             CreateMap<MeasurementQty, MeasurementQtyDto>();
             CreateMap<MeasurementUnit, MeasurementUnitDto>();
             CreateMap<Ingredient, IngredientDto>();
-            CreateMap<RecipeIngredient, RecipeIngredientsDto>();
+            CreateMap<RecipeIngredient, RecipeIngredientsDto>()
+                .ForMember(d => d.Name, o => o.MapFrom(s => s.Ingredient.Name))
+                .ForMember(d => d.Unit, o => o.MapFrom(s => s.MeasurementUnit.MeasurementDescription))
+                .ForMember(d => d.Qty, o => o.MapFrom(s => s.MeasurementQty.Amount));
         }
     }
 }
