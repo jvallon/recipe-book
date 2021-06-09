@@ -15,6 +15,7 @@ namespace recipebookserver
             CreateMap<User, UserDto>();
             CreateMap<User, UserWithRecipesDto>();
             CreateMap<User, UserDetailsDto>();
+            CreateMap<UserForCreationDto, User>();
             CreateMap<Recipe, RecipeDto>();
             CreateMap<Recipe, RecipeWithDetailsDto>();
             CreateMap<Favorite, FavoriteDto>().ForMember(d => d.RecipeTitle, o => o.MapFrom(s => s.Recipe.Title));

@@ -12,8 +12,27 @@
   </div>
 </template>
 <script>
+import UserService from '@/api-services/user.service'
+
 export default {
-  name: 'Profile'
+  name: 'Profile',
+  data () {
+    return {
+      userId: ''
+    }
+  },
+  methods: {
+    getUser () {
+      UserService.get(this.$auth.user.sub.split('|')[1])
+        .then(response => {
+          console.log(response)
+          this.userId = response.userId
+        })
+    }
+  },
+  mounted () {
+    this.getUser()
+  }
 }
 </script>
 

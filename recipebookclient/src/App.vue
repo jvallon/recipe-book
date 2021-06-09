@@ -1,10 +1,13 @@
 <template>
   <v-app>
+    <div v-if="!$auth.loading">
+
     <Header class="header"></Header>
 
     <v-main class="main">
       <router-view :user="userInfo"/>
     </v-main>
+    </div>
   </v-app>
 </template>
 

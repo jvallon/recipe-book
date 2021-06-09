@@ -9,7 +9,7 @@ namespace Entities.Models
     [Table("users")]
     public class User
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         [Required(ErrorMessage = "First name is required")]
         [StringLength(45, ErrorMessage = "First name can't be longer than 45 characters")]

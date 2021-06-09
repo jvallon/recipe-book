@@ -8,9 +8,10 @@ namespace Contracts
     public interface IUserRepository : IRepositoryBase<User>
     {
         IEnumerable<User> GetUsers();
-        User GetUserById(int userId);
+        User GetUserById(string userId);
         User GetUserByAuthId(string authId);
-        User GetUserByIdWithRecipes(int userId);
-        User GetUserByIdWithFavorites(int userId);
+        User GetUserByIdWithRecipes(string userId);
+        User GetUserByIdWithFavorites(string userId);
+        void CreateUser(User user);
     }
 }

@@ -25,7 +25,7 @@ namespace Repository
                 .ToList();
         }
 
-        public User GetUserById(int id)
+        public User GetUserById(string id)
         {
             return FindByCondition(user => user.UserId == id).FirstOrDefault();
         }
@@ -35,20 +35,25 @@ namespace Repository
             return FindByCondition(user => user.Username == authId).FirstOrDefault();
         }
 
-        public User GetUserByIdWithRecipes(int userId)
+        public User GetUserByIdWithRecipes(string userId)
         {
             return FindByCondition(user => user.UserId.Equals(userId))
                 .Include(re => re.Recipes)
                 .FirstOrDefault();
         }
 
-        public User GetUserByIdWithFavorites(int userId)
+        public User GetUserByIdWithFavorites(string userId)
         {
             return FindByCondition(user => user.UserId.Equals(userId))
                 .Include(f => f.Favorites)
                     .ThenInclude(favorite => favorite.Recipe)
                 //.ThenInclude(recipe => recipe.Title)
                 .FirstOrDefault();
+        }
+
+        public void CreateUser(User user)
+        {
+            Create(user);
         }
     }
 }

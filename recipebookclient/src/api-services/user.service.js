@@ -1,4 +1,5 @@
 import Axios from 'axios'
+// import { getInstance } from '@/auth'
 
 const RESOURCE_NAME = '/user'
 
@@ -6,8 +7,16 @@ export default {
   getAll () {
     return Axios.get(`${RESOURCE_NAME}`)
   },
-  get (id) {
-    return Axios.get(`${RESOURCE_NAME}/${id}`)
+  async get (id) {
+    // Get the access token from the auth wrapper
+    // const instance = getInstance()
+    // const { token } = instance.getTokenSilently()
+    // console.log(token)
+    return Axios.get(`${RESOURCE_NAME}/${id}`, {
+      // headers: {
+      //   Authorization: `Bearer ${token}` // send the access token through the 'Authorization' header
+      // }
+    })
   },
   getWithRecipes (id) {
     return Axios.get(`${RESOURCE_NAME}/${id}/recipes`)
@@ -27,6 +36,14 @@ export default {
     // return Axios.get(`${RESOURCE_NAME}/${id}/favorites`)
   },
   create (payload) {
-    return Axios.post(`${RESOURCE_NAME}`, payload)
+    // Get the access token from the auth wrapper
+    const token = this.$token
+    console.log(`token ${token}`)
+
+    return Axios.post(`${RESOURCE_NAME}`, payload, {
+      headers: {
+        Authorization: `Bearer ${token}` // send the access token through the 'Authorization' header
+      }
+    })
   }
 }

@@ -34,7 +34,7 @@ namespace recipebookserver.Controllers
 
             if(user == null)
             {
-                return NotFound();
+                return NotFound("User not found");
             }
 
             return Ok(repository.Favorite.GetFavoritesByUserId(user.UserId).ToList());

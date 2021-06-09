@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Contracts;
 using AutoMapper;
 using Entities.DataTransferObjects;
+using Entities.Models;
 using Microsoft.AspNetCore.Authorization;
 
 namespace recipebookserver.Controllers
@@ -46,11 +47,19 @@ namespace recipebookserver.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetUserById(int id)
+        [Authorize]
+        public IActionResult GetUserById(string id)
         {
             try
             {
                 var user = repository.User.GetUserById(id);
+
+                if(user == null)
+                {
+                    logger.LogError($"User with id: {id} not found in DB");
+                    return NotFound();
+                }
+
                 logger.LogInfo($"Returned user with id: {id} from DB");
 
                 var userResult = mapper.Map<UserDto>(user);
@@ -64,7 +73,7 @@ namespace recipebookserver.Controllers
         }
 
         [HttpGet("{id}/recipes")]
-        public IActionResult GetUserByIdWithRecipes(int id)
+        public IActionResult GetUserByIdWithRecipes(string id)
         {
             try
             {
@@ -90,7 +99,7 @@ namespace recipebookserver.Controllers
         }
 
         [HttpGet("{id}/favorites")]
-        public IActionResult GetUserByIdWithFavorites(int id)
+        public IActionResult GetUserByIdWithFavorites(string id)
         {
             try
             {
@@ -113,6 +122,30 @@ namespace recipebookserver.Controllers
                 logger.LogError($"Something went wrong inside GetUserByIdWithFavorites for id: {id}, {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
+        }
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult CreateUser([FromBody]UserForCreationDto user)
+        {
+            if(user == null)
+            {
+                logger.LogError($"{nameof(CreateUser)}: User is null");
+                return BadRequest("User object is null");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                logger.LogError($"{nameof(CreateUser)}: User object is not valid");
+                return BadRequest("User object is not valid");
+            }
+
+            var userEntity = mapper.Map<User>(user);
+            repository.User.CreateUser(userEntity);
+            repository.Save();
+
+            var createdUser = mapper.Map<UserDto>(userEntity);
+            return CreatedAtRoute(nameof(GetUserById), new { id = createdUser.UserId }, createdUser);
         }
     }
 }

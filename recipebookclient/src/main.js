@@ -29,8 +29,17 @@ const instance = getInstance()
 instance.$watch('loading', async loading => {
   if (!loading && instance.isAuthenticated) {
     Vue.prototype.$token = await instance.getTokenSilently()
-    console.log(this.$token)
   }
+})
+
+// Add a request interceptor
+Axios.interceptors.request.use(function (config) {
+  // Do something before request is sent
+  config.headers.Authorization = `Bearer ${Vue.prototype.$token}`
+  return config
+}, function (error) {
+  // Do something with request error
+  return Promise.reject(error)
 })
 
 new Vue({

@@ -18,7 +18,7 @@ namespace Repository
 
         }
 
-        public IEnumerable<Favorite> GetFavoritesByUserId(int userId)
+        public IEnumerable<Favorite> GetFavoritesByUserId(string userId)
         {
             return FindByCondition(f => f.UserId == userId)
                 .OrderBy(user => user.User.Username)
