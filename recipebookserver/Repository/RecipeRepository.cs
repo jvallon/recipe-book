@@ -35,6 +35,15 @@ namespace Repository
         {
             return FindByCondition(r => r.RecipeId == recipeId)
                 .Include(u => u.User)
+                .Include(recipe => recipe.RecipeIngredients)
+                    .ThenInclude(recipeIngredients => recipeIngredients.Ingredient)
+                //.ThenInclude(ingredient => ingredient.Name)
+                .Include(recipe => recipe.RecipeIngredients)
+                    .ThenInclude(recipeIngredients => recipeIngredients.MeasurementQty)
+                //    .ThenInclude(qty => qty.Amount)
+                .Include(recipe => recipe.RecipeIngredients)
+                    .ThenInclude(recipeIngredients => recipeIngredients.MeasurementUnit)
+                //    .ThenInclude(unit => unit.Description)
                 .FirstOrDefault();
         }
     }

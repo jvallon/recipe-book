@@ -13,6 +13,7 @@ namespace Entities.DataTransferObjects
         public TimeSpan? CookTime { get; set; }
         public string? ImageUrl { get; set; }
 
+        public IEnumerable<RecipeIngredientsDto> RecipeIngredients { get; set; }
         public UserDto User { get; set; }
     }
 }

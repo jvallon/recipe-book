@@ -29,6 +29,7 @@ namespace Entities.Models
         public string UserId { get; set; }
         public User User { get; set; }
 
+        public virtual ICollection<RecipeIngredient> RecipeIngredients { get; set; }
         public ICollection<Favorite> Favorites { get; set; }
     }
 }

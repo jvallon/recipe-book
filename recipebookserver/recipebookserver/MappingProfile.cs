@@ -20,6 +20,10 @@ namespace recipebookserver
             CreateMap<Recipe, RecipeWithDetailsDto>();
             CreateMap<Favorite, FavoriteDto>().ForMember(d => d.RecipeTitle, o => o.MapFrom(s => s.Recipe.Title));
             CreateMap<FavoriteForCreationDto, Favorite>();
+            CreateMap<MeasurementQty, MeasurementQtyDto>();
+            CreateMap<MeasurementUnit, MeasurementUnitDto>();
+            CreateMap<Ingredient, IngredientDto>();
+            CreateMap<RecipeIngredient, RecipeIngredientsDto>();
         }
     }
 }
