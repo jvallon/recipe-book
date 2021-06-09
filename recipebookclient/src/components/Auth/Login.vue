@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import { getInstance } from '@/auth/authWrapper'
 import UserService from '@/api-services/user.service'
 
 export default {
@@ -16,28 +17,46 @@ export default {
     return {
     }
   },
-  watch: {
+  computed: {
+    userId () {
+      return this.$auth.user.sub.split('|')[1]
+    }
   },
-  mounted () {
-    setTimeout(() => this.$router.push('/'),
-      5000)
-
-    this.$store.dispatch('retrieveTokenFromAuthz')
-
-    console.log(this.$auth.user)
-    const userId = this.$auth.user.sub.split('|')[1]
-    UserService.get(userId)
-      .catch(err => console.log(err))
-
-    // if (user === 'undefined') {
-    //   UserService.create(new {
-    //     userId: userId,
-    //     firstName: this.$auth.user.name,
-    //     lastName: '',
-    //     userName: this.$auth.user.nickname,
-    //     emailAddress: this.$auth.user.email
-    //   }())
-    // }
+  created () {
+  },
+  methods: {
+    async getUser () {
+      var instance = getInstance()
+      var user = await instance.getTokenSilently().then((authToken) => {
+        const userId = this.userId
+        return UserService.get(userId)
+          .then(user => {
+            return user.data
+          })
+      })
+      return user
+    },
+    async createUser () {
+      const userId = this.userId
+      UserService.create({
+        userId: userId,
+        firstName: this.$auth.user.name,
+        lastName: '',
+        userName: this.$auth.user.nickname,
+        emailAddress: this.$auth.user.email
+      })
+    }
+  },
+  async mounted () {
+    this.getUser()
+      .then(user => {
+        // user exists update store? console.log('mounted user:', user)
+      })
+      .catch(err => {
+        if (err.response.status === 404) {
+          this.createUser() // this should probably be done on the server
+        }
+      })
   }
 }
 </script>

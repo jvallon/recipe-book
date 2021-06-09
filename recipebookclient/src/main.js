@@ -28,13 +28,13 @@ const instance = getInstance()
 
 instance.$watch('loading', async loading => {
   if (!loading && instance.isAuthenticated) {
+    console.log('UPDATING TOKEN')
     Vue.prototype.$token = await instance.getTokenSilently()
   }
 })
 
 // Add a request interceptor
 Axios.interceptors.request.use(function (config) {
-  // Do something before request is sent
   config.headers.Authorization = `Bearer ${Vue.prototype.$token}`
   return config
 }, function (error) {

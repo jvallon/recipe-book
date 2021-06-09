@@ -8,6 +8,7 @@ using Contracts;
 using Entities.Models;
 using AutoMapper;
 using Entities.DataTransferObjects;
+using Microsoft.AspNetCore.Authorization;
 
 namespace recipebookserver.Controllers
 {
@@ -49,6 +50,7 @@ namespace recipebookserver.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult CreateFavorite([FromBody]FavoriteForCreationDto favorite)
         {
             try
