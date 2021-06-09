@@ -5,7 +5,7 @@
       elevate-on-scroll
       color="#eee">
       <span v-if="isHome">Recipe Book</span>
-      <span v-else><v-icon large @click="goBack">mdi-chevron-left</v-icon></span>
+      <span v-else><v-icon large @click="goHome">mdi-chevron-left</v-icon></span>
       <v-spacer></v-spacer>
       <v-text-field
         v-if="showSearchbox"
@@ -99,8 +99,8 @@ export default {
     onNewRecipeClick () {
       this.$router.push({ path: '/recipe/new' })
     },
-    goBack () {
-      this.$router.go(-1)
+    goHome () {
+      this.$router.push({ path: '/' })
     }
   },
   computed: {
