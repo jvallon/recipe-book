@@ -33,7 +33,7 @@ export default {
   components: {
     RecipeCard
   },
-  props: ['user'],
+  // props: ['user'],
   data () {
     return {
       recipes: [],
@@ -41,6 +41,9 @@ export default {
     }
   },
   computed: {
+    userId () {
+      return this.$auth.user.sub.split('|')[1]
+    }
   },
   methods: {
     isUserFavorite (recipe) {
@@ -55,16 +58,16 @@ export default {
     },
     updateFavorite (value, recipeId) {
       // console.log(value, recipeId, this.getFavoriteId(this.user.id, recipeId))
-      const fav = this.getFavoriteId(this.user.id, recipeId)
+      const fav = this.getFavoriteId(this.userId, recipeId)
 
       if (value === false) {
         FavoriteService.delete(fav.id).then(response => this.retrieveFavorites())
       } else {
-        FavoriteService.create({ userId: this.user.id, recipeId: recipeId }).then(response => this.retrieveFavorites())
+        FavoriteService.create({ userId: this.userId, recipeId: recipeId }).then(response => this.retrieveFavorites())
       }
     },
     retrieveFavorites () {
-      UserService.getWithFavorites(this.user.id)
+      UserService.getWithFavorites(this.userId)
         .then(response => {
           this.favorites = response.data.favorites
         })

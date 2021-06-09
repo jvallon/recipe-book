@@ -5,7 +5,7 @@
     <Header class="header"></Header>
 
     <v-main class="main">
-      <router-view :user="userInfo"/>
+      <router-view/>
     </v-main>
     </div>
   </v-app>
@@ -21,12 +21,6 @@ export default {
   },
 
   data: () => ({
-    userInfo: {
-      id: 1,
-      firstName: 'Josh',
-      lastName: 'Vallon',
-      username: 'jvallon'
-    }
   })
 }
 </script>

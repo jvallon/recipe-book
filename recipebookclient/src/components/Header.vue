@@ -53,8 +53,8 @@
             color="darkgrey"
             v-bind="attrs"
             v-on="on">
-            <!-- <v-icon>mdi-account</v-icon> -->
-            <v-img
+            <v-icon v-if="$auth.loading">mdi-account</v-icon>
+            <v-img v-else
               class="user-picture"
               :src="$auth.user.picture"
               contain
