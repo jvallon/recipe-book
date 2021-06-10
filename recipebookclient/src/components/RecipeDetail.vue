@@ -6,28 +6,16 @@
           <v-col cols="8">
             <v-card-title>{{ recipe.title }}</v-card-title>
             <v-card-subtitle>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div class="prep time"
-                    v-bind="attrs"
-                    v-on="on">
-                    <v-icon>mdi-book-clock</v-icon>
-                    <span>{{ prepTime }}</span>
-                  </div>
-                </template>
-                <span>Prep Time</span>
-              </v-tooltip>
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
-                  <div class="cook time"
-                    v-bind="attrs"
-                    v-on="on">
-                    <v-icon>mdi-cookie-clock</v-icon>
-                    {{ cookTime }}
-                  </div>
-                </template>
-                <span>Cook Time</span>
-              </v-tooltip>
+              <v-row>
+                <v-col cols="4">
+                  <v-icon class="icon">mdi-book-clock</v-icon>
+                  <span>Prep Time: {{ prepTime }}</span>
+                </v-col>
+                <v-col cols="4">
+                  <v-icon class="icon">mdi-cookie-clock</v-icon>
+                  <span>Cook Time: {{ cookTime }}</span>
+                </v-col>
+              </v-row>
             </v-card-subtitle>
             <v-card-text>{{ recipe.description }}</v-card-text>
             <v-card-text>Written by: {{ author }}</v-card-text>
@@ -135,6 +123,10 @@ export default {
 .recipe-detail {
   margin: 12px;
   // padding: 12px;
+}
+
+.icon {
+  margin-right: .5em;
 }
 
 .ingredient-list {
