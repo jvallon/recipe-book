@@ -39,12 +39,12 @@
         </v-row>
         <v-row class="ingredients">
           <v-subheader>Ingredients</v-subheader>
-          <div v-for="ingredient in ingredients" :key="ingredient.id">
+        </v-row>
+          <div v-for="ingredient in ingredients" :key="ingredient.id" class="ingr-list">
             <v-row>
-              {{ ingredient.qty }} {{ ingredient.unit }} {{ ingredient.name }}
+              <ingredient :qty="ingredient.qty" :unit="ingredient.unit" :name="ingredient.name"></ingredient>
             </v-row>
           </div>
-        </v-row>
         <v-row class="instructions">
           <v-subheader>Instructions</v-subheader>
         </v-row>
@@ -55,9 +55,13 @@
 
 <script>
 import RecipeService from '@/api-services/recipe.service'
+import Ingredient from '@/components/Ingredient'
 
 export default {
   name: 'RecipeDetail',
+  components: {
+    Ingredient
+  },
   props: ['id'],
   data () {
     return {
@@ -98,6 +102,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.row {
+  margin: 0px;
+}
+
+.ingr-list {
+  margin: 0px 12px;
+}
 
 </style>
