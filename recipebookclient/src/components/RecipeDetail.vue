@@ -1,8 +1,7 @@
 <template>
   <div>
     <v-container>
-      <v-card
-        light>
+      <v-card class="recipe-detail" light>
         <v-row>
           <v-col cols="8">
             <v-card-title>{{ recipe.title }}</v-card-title>
@@ -37,17 +36,24 @@
             <v-img :src="imageUrl" size="250px"></v-img>
           </v-col>
         </v-row>
-        <v-row class="ingredients">
-          <v-subheader>Ingredients</v-subheader>
-        </v-row>
-          <div v-for="ingredient in ingredients" :key="ingredient.id" class="ingr-list">
+        <div class="ingredient-list">
+          <v-row class="subheader">
+            <v-subheader>Ingredients</v-subheader>
+          </v-row>
+          <div v-for="ingredient in ingredients" :key="ingredient.id">
             <v-row>
-              <ingredient :qty="ingredient.qty" :unit="ingredient.unit" :name="ingredient.name"></ingredient>
+              <ingredient-item :qty="ingredient.qty" :unit="ingredient.unit" :name="ingredient.name"></ingredient-item>
             </v-row>
           </div>
-        <v-row class="instructions">
-          <v-subheader>Instructions</v-subheader>
-        </v-row>
+        </div>
+        <div class="instruction-list">
+          <v-row class="subheader">
+            <v-subheader>Instructions</v-subheader>
+          </v-row>
+          <div v-for="instruction in instructions" :key="instruction.step">
+            <instruction-item :step="instruction.step" :description="instruction.description"></instruction-item>
+          </div>
+        </div>
       </v-card>
     </v-container>
   </div>
@@ -55,12 +61,16 @@
 
 <script>
 import RecipeService from '@/api-services/recipe.service'
-import Ingredient from '@/components/Ingredient'
+import IngredientItem from '@/components/IngredientItem'
+import InstructionItem from './InstructionItem.vue'
+// import Favorite from './Favorite.vue'
 
 export default {
   name: 'RecipeDetail',
   components: {
-    Ingredient
+    IngredientItem,
+    InstructionItem
+    // Favorite
   },
   props: ['id'],
   data () {
@@ -70,7 +80,21 @@ export default {
       cookTime: 0,
       imageUrl: '',
       author: '',
-      ingredients: []
+      ingredients: [],
+      instructions: [
+        {
+          step: 1,
+          description: 'Boil potatoes for 30 minutes, drain.'
+        },
+        {
+          step: 2,
+          description: 'Add butter and milk.'
+        },
+        {
+          step: 3,
+          description: 'Mash until smooth.'
+        }
+      ]
     }
   },
   computed: {
@@ -82,6 +106,7 @@ export default {
       this.imageUrl = `/${this.recipe.imageUrl}`
       this.author = this.recipe.user.username
       this.ingredients = this.recipe.recipeIngredients
+      // this.instructions = this.recipe.instructions
       // console.log(this.recipe.ingredients)
     }
   },
@@ -107,8 +132,25 @@ export default {
   margin: 0px;
 }
 
-.ingr-list {
-  margin: 0px 12px;
+.recipe-detail {
+  margin: 12px;
+  // padding: 12px;
+}
+
+.ingredient-list {
+  margin: 12px;
+
+  .subheader {
+    border-bottom: 1px solid lightgrey;
+  }
+}
+
+.instruction-list {
+  margin: 12px;
+
+  .subheader {
+    border-bottom: 1px solid lightgrey;
+  }
 }
 
 </style>

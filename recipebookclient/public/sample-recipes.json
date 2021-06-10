@@ -3,7 +3,20 @@
         "title": "Pancakes",
         "subtitle": "Prep: 5m, Cook: 10m",
         "description": "A shortstack",
-        "imageUrl": "pancakes.jpg"
+        "imageUrl": "pancakes.jpg",
+        "instructions": [{
+                "step": 1,
+                "description": "Boil potatoes for 30 minutes, drain."
+            },
+            {
+                "step": 2,
+                "description": "Add butter and milk."
+            },
+            {
+                "step": 3,
+                "description": "Mash until smooth."
+            }
+        ]
     },
     {
         "id": 2,

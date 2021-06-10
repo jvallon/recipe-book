@@ -30,6 +30,7 @@ instance.$watch('loading', async loading => {
   if (!loading && instance.isAuthenticated) {
     console.log('UPDATING TOKEN')
     Vue.prototype.$token = await instance.getTokenSilently()
+    Vue.prototype.$userId = instance.user.sub.split('|')[1]
   }
 })
 
