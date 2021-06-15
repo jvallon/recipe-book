@@ -97,7 +97,7 @@ export default {
       })
     },
     onNewRecipeClick () {
-      this.$router.push({ path: '/recipe/new' })
+      this.$router.push({ name: 'newrecipe' })
     },
     goHome () {
       this.$router.push({ path: '/' })
