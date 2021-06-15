@@ -4,6 +4,7 @@ import Home from '@/views/Home'
 import Profile from '@/views/Profile'
 import AuthTest from '@/views/AuthTest'
 import RecipeDetail from '@/components/RecipeDetail'
+import NewRecipeForm from '@/components/NewRecipeForm'
 import NotFound from '@/views/NotFound'
 import Forbidden from '@/views/Forbidden'
 import { authGuard } from '../auth'
@@ -22,6 +23,12 @@ const routes = [
     name: 'recipe',
     component: RecipeDetail,
     props: true,
+    beforeEnter: authGuard
+  },
+  {
+    path: '/newrecipe',
+    name: 'newrecipe',
+    component: NewRecipeForm,
     beforeEnter: authGuard
   },
   {
