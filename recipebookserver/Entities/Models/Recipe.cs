@@ -25,6 +25,9 @@ namespace Entities.Models
 
         public string? ImageUrl { get; set; }
 
+        [Column(TypeName = "json")]
+        public IList<Instruction> Instructions { get; set; }
+
         [ForeignKey(nameof(User))]
         public string UserId { get; set; }
         public User User { get; set; }

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using Newtonsoft.Json;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Entities
 {
@@ -18,6 +19,14 @@ namespace Entities
         {
             //modelBuilder.Entity<Favorite>()
             //    .HasKey(f => new { f.UserId, f.RecipeId });
+            var instConverter = new ValueConverter<IList<Instruction>, string>(
+                v => JsonConvert.SerializeObject(v),
+                v => JsonConvert.DeserializeObject<IList<Instruction>>(v) ?? null);
+
+            modelBuilder
+                .Entity<Recipe>()
+                .Property(e => e.Instructions)
+                .HasConversion(instConverter);
         }
 
         public DbSet<User> Users { get; set; }

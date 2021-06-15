@@ -24,6 +24,11 @@ namespace recipebookserver.Controllers
             this.repository = repositoryWrapper;
             this.mapper = mapper;
         }
+        [HttpGet]
+        public IActionResult Test()
+        {
+            return Ok(new { Message = "Hello from a public endpoint. No auth required." });
+        }
 
         [HttpGet("private")]
         [Authorize]

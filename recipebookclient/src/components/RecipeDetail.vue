@@ -68,21 +68,7 @@ export default {
       cookTime: 0,
       imageUrl: '',
       author: '',
-      ingredients: [],
-      instructions: [
-        {
-          step: 1,
-          description: 'Boil potatoes for 30 minutes, drain.'
-        },
-        {
-          step: 2,
-          description: 'Add butter and milk.'
-        },
-        {
-          step: 3,
-          description: 'Mash until smooth.'
-        }
-      ]
+      ingredients: []
     }
   },
   computed: {
@@ -94,8 +80,8 @@ export default {
       this.imageUrl = `/${this.recipe.imageUrl}`
       this.author = this.recipe.user.username
       this.ingredients = this.recipe.recipeIngredients
-      // this.instructions = this.recipe.instructions
-      // console.log(this.recipe.ingredients)
+      this.instructions = this.recipe.instructions
+      console.log(this.recipe)
     }
   },
   mounted () {
