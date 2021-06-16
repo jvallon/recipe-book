@@ -52,6 +52,8 @@ import RecipeService from '@/api-services/recipe.service'
 import IngredientItem from '@/components/IngredientItem'
 import InstructionItem from './InstructionItem.vue'
 // import Favorite from './Favorite.vue'
+import moment from 'moment'
+import momentdurformat from 'moment-duration-format'
 
 export default {
   name: 'RecipeDetail',
@@ -68,15 +70,16 @@ export default {
       cookTime: 0,
       imageUrl: '',
       author: '',
-      ingredients: []
+      ingredients: [],
+      instructions: []
     }
   },
   computed: {
   },
   watch: {
     recipe (newval, oldval) {
-      this.prepTime = this.recipe.prepTime.value.totalMinutes
-      this.cookTime = this.recipe.cookTime.value.totalMinutes
+      this.prepTime = moment.duration(this.recipe.prepTime.value).format('H[h] mm[m]')
+      this.cookTime = moment.duration(this.recipe.cookTime.value).format('H[h] mm[m]')
       this.imageUrl = `/${this.recipe.imageUrl}`
       this.author = this.recipe.user.username
       this.ingredients = this.recipe.recipeIngredients
@@ -86,6 +89,7 @@ export default {
   },
   mounted () {
     this.fetchRecipe(this.id)
+    momentdurformat(moment)
   },
   methods: {
     fetchRecipe (id) {
