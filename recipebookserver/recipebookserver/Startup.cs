@@ -54,9 +54,12 @@ namespace recipebookserver
                         NameClaimType = ClaimTypes.NameIdentifier
                     };
                 });
-
             services.AddAuthorization();
-            services.AddControllers();
+            services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.Converters.Add(new JsonTimeSpanConverter());
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

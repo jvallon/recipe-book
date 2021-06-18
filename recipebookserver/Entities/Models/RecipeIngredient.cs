@@ -14,17 +14,17 @@ namespace Entities.Models
         
         public int RecipeId { get; set; }
 
+        [ForeignKey(nameof(Ingredient))]
         public int IngredientId { get; set; }
 
-        [ForeignKey(nameof(IngredientId))]
         public Ingredient Ingredient { get; set; }
 
+        [ForeignKey(nameof(MeasurementUnit))]
         public int MeasurementUnitsId { get; set; }
-        [ForeignKey(nameof(MeasurementUnitsId))]
         public MeasurementUnit MeasurementUnit { get; set; }
 
+        [ForeignKey(nameof(MeasurementQty))]
         public int MeasurementQtyId { get; set; }
-        [ForeignKey(nameof(MeasurementQtyId))]
         public MeasurementQty MeasurementQty { get; set; }
     }
 }

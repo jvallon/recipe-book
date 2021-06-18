@@ -12,6 +12,9 @@ namespace Repository
         private IUserRepository userRepository;
         private IRecipeRepository recipeRepository;
         private IFavoriteRepository favoriteRepository;
+        private IIngredientRepository ingredientRepository;
+        private IMeasurementQtyRepository measurementQtyRepository;
+        private IMeasurementUnitRepository measurementUnitRepository;
 
         public IUserRepository User
         {
@@ -44,6 +47,30 @@ namespace Repository
             get
             {
                 return favoriteRepository ??= new FavoriteRepository(repositoryContext);
+            }
+        }
+
+        public IIngredientRepository Ingredients
+        {
+            get
+            {
+                return ingredientRepository ??= new IngredientRepository(repositoryContext);
+            }
+        }
+
+        public IMeasurementQtyRepository MeasurementQty
+        {
+            get
+            {
+                return measurementQtyRepository ??= new MeasurementQtyRepository(repositoryContext);
+            }
+        }
+
+        public IMeasurementUnitRepository MeasurementUnit
+        {
+            get
+            {
+                return measurementUnitRepository ??= new MeasurementUnitRepository(repositoryContext);
             }
         }
 

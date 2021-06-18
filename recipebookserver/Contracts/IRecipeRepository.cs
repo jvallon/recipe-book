@@ -10,5 +10,7 @@ namespace Contracts
         public IEnumerable<Recipe> GetRecipes();
         public Recipe GetRecipeById(int recipeId);
         public Recipe GetRecipeDetailsById(int recipeId);
+
+        public void CreateRecipe(Recipe recipe);
     }
 }

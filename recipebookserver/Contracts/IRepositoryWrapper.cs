@@ -9,6 +9,10 @@ namespace Contracts
         IUserRepository User { get; }
         IRecipeRepository Recipe { get; }
         IFavoriteRepository Favorite { get; }
+        IIngredientRepository Ingredients { get; }
+        IMeasurementQtyRepository MeasurementQty { get; }
+        IMeasurementUnitRepository MeasurementUnit { get; }
+
         void Save();
     }
 }

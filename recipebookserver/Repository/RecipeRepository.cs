@@ -46,5 +46,11 @@ namespace Repository
                 //    .ThenInclude(unit => unit.Description)
                 .FirstOrDefault();
         }
+
+        public void CreateRecipe(Recipe recipe)
+        {
+            
+            Create(recipe);
+        }
     }
 }
